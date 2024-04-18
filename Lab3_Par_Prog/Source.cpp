@@ -117,10 +117,10 @@ int main(int argc, char** argv) {
     MPI_Comm_rank(MPI_COMM_WORLD, &myRank);
     MPI_Comm_size(MPI_COMM_WORLD, &MPI_COMM_SIZE);
 
-    const int rows1 = 100;
-    const int cols1 = 100;
-    const int rows2 = 100;
-    const int cols2 = 100;
+    const int rows1 = 2000;
+    const int cols1 = 2000;
+    const int rows2 = 2000;
+    const int cols2 = 2000;
 
     // Генерация случайных матриц и запись их в файлы
     std::vector<std::vector<int>> matrix1 = generateRandomMatrix(rows1, cols1);
